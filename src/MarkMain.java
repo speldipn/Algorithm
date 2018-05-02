@@ -35,7 +35,6 @@ public class MarkMain {
   }
 
 
-
   public static void solve(int count) {
     for (int i = 0; i < (count + 1); ++i) {
       for (int j = 0; j < i; ++j) {
@@ -238,14 +237,14 @@ public class MarkMain {
     int end = count;
 
     int line = count * 2 - 1;
-    int mid = line/2;
+    int mid = line / 2;
 
-    count = count*2-1;
+    count = count * 2 - 1;
     start = 0;
-    end = count-1;
+    end = count - 1;
 
     for (int i = 0; i < line; ++i) {
-      for (int j = 0; j < count ; ++j) {
+      for (int j = 0; j < count; ++j) {
         if (j == start || j == end) {
           System.out.print("*");
         } else {
@@ -278,10 +277,10 @@ public class MarkMain {
 
     for (int i = 0; i < line; ++i) {
       for (int j = 0; j < count; ++j) {
-        if(i == 0 || i == line-1) {
+        if (i == 0 || i == line - 1) {
           System.out.print("*");
         } else {
-          if(j == 0 || j == end) {
+          if (j == 0 || j == end) {
             System.out.print("*");
           } else {
             System.out.print(" ");
@@ -293,27 +292,11 @@ public class MarkMain {
   }
 
   private static void solve10(int count) {
-    int start = 0;
-    int end = count;
-
     int line = count;
-    int mid = line / 2;
-    start = 0;
-    end = count - 1;
 
     for (int i = 0; i < line; ++i) {
-      for(int j = 0; j < count-i; ++j) {
-        if(i == 0) {
-          System.out.print("*");
-        }
-        for(int k = count; k > i; --k) {
-          System.out.print(" ");
-        }
-        if(i != 0) {
-          System.out.print("*");
-        }
+      for (int j = 0; j < line - i; j++) {
       }
-      System.out.println();
     }
   }
 }
