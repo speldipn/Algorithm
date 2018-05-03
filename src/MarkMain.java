@@ -50,10 +50,10 @@ public class MarkMain {
     }
   }
 
-  //  *
-  //  **
-  //  ***
-  //  ****
+  //      *
+  //     **
+  //    ***
+  //   ****
   //  *****
   public static void solve1(int count) {
     int i;
@@ -362,13 +362,13 @@ public class MarkMain {
     }
   }
 
-  //  *      *      *      *      *      *      *
-  //    *     *     *     *     *     *
-  //         *    *    *    *    *
-  //             *   *   *   *
-  //                 *  *  *
-  //                   * *
-  //                    *
+  // *      *      *      *      *      *      *
+  //       *     *     *     *     *     *
+  //          *    *    *    *    *
+  //              *   *   *   *
+  //                  *  *  *
+  //                    * *
+  //                     *
   public static void solve10(int count) {
     int line = count;
 
