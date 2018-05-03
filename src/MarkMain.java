@@ -15,26 +15,32 @@ public class MarkMain {
     solve4(5);
     System.out.println();
 
-    solve5(3);
+    solve5(5);
     System.out.println();
 
-    solve6(4);
+    solve6(5);
     System.out.println();
 
-    solve7(3);
+    solve7(5);
     System.out.println();
 
-    solve8(3);
+    solve8(5);
     System.out.println();
 
-    solve9(4);
+    solve9(5);
     System.out.println();
 
-    solve10(5);
+    solve10(7);
+    System.out.println();
 
+    sovle11(5);
   }
 
-
+  //  *
+  //  **
+  //  ***
+  //  ****
+  //  *****
   public static void solve(int count) {
     for (int i = 0; i < (count + 1); ++i) {
       for (int j = 0; j < i; ++j) {
@@ -44,6 +50,11 @@ public class MarkMain {
     }
   }
 
+  //  *
+  //  **
+  //  ***
+  //  ****
+  //  *****
   public static void solve1(int count) {
     int i;
     int j;
@@ -59,7 +70,12 @@ public class MarkMain {
     }
   }
 
-  private static void solve2(int line) {
+  //      *
+  //     ***
+  //    *****
+  //   *******
+  //  *********
+  public static void solve2(int line) {
     for (int i = 0; i < line; ++i) {
       for (int j = 0; j < line - (i + 1); ++j) {
         System.out.print(" ");
@@ -74,7 +90,12 @@ public class MarkMain {
     }
   }
 
-  private static void solve3(int line) {
+  //     *
+  //    * *
+  //   *   *
+  //  *     *
+  // *       *
+  public static void solve3(int line) {
     for (int i = 0; i < line; ++i) {
       for (int j = 0; j < line - (i + 1); ++j) {
         System.out.print(" ");
@@ -96,7 +117,12 @@ public class MarkMain {
     }
   }
 
-  private static void solve4(int line) {
+  //      *
+  //     * *
+  //    *   *
+  //   *     *
+  //  *********
+  public static void solve4(int line) {
     for (int i = 0; i < line; ++i) {
       for (int j = 0; j < line - (i + 1); ++j) {
         System.out.print(" ");
@@ -122,10 +148,19 @@ public class MarkMain {
     }
   }
 
-  private static void solve5(int count) {
+  //     *
+  //    ***
+  //   *****
+  //  *******
+  // *********
+  //  *******
+  //   *****
+  //    ***
+  //     *
+  public static void solve5(int count) {
     int line = count * 2 - 1;
 
-    int start = count / 2;
+    int start = line / 2 - 1;
     int end = start;
     int mid = line / 2;
 
@@ -155,13 +190,22 @@ public class MarkMain {
     }
   }
 
-
-  private static void solve6(int count) {
+  //     *
+  //    * *
+  //   * * *
+  //  * * * *
+  // * * * * *
+  //  * * * *
+  //   * * *
+  //    * *
+  //     *
+  public static void solve6(int count) {
     int line = count * 2 - 1;
 
-    int start = count / 2;
+    int start = line / 2 - 1;
     int end = start;
     int mid = line / 2;
+
     boolean valid = true;
 
     for (int i = 0; i < line; ++i) {
@@ -195,10 +239,19 @@ public class MarkMain {
     }
   }
 
-  private static void solve7(int count) {
+  //      *
+  //     * *
+  //    *   *
+  //   *     *
+  //  *       *
+  //   *     *
+  //    *   *
+  //     * *
+  //      *
+  public static void solve7(int count) {
     int line = count * 2 - 1;
 
-    int start = count / 2;
+    int start = line / 2 - 1;
     int end = start;
     int mid = line / 2;
 
@@ -232,7 +285,16 @@ public class MarkMain {
     }
   }
 
-  private static void solve8(int count) {
+  //  *       *
+  //   *     *
+  //    *   *
+  //     * *
+  //      *
+  //     * *
+  //    *   *
+  //   *     *
+  //  *       *
+  public static void solve8(int count) {
     int start = 0;
     int end = count;
 
@@ -264,7 +326,16 @@ public class MarkMain {
     }
   }
 
-  private static void solve9(int count) {
+  //  *********
+  //  *       *
+  //  *       *
+  //  *       *
+  //  *       *
+  //  *       *
+  //  *       *
+  //  *       *
+  //  *********
+  public static void solve9(int count) {
     int start = 0;
     int end = count;
 
@@ -291,13 +362,41 @@ public class MarkMain {
     }
   }
 
-  private static void solve10(int count) {
+  //  *      *      *      *      *      *      *
+  //    *     *     *     *     *     *
+  //         *    *    *    *    *
+  //             *   *   *   *
+  //                 *  *  *
+  //                   * *
+  //                    *
+  public static void solve10(int count) {
+    int line = count;
+
+    int startSpace = 0;
+    for (int i = 0; i < line; ++i) {
+      if (i > 0) {
+        startSpace += (count - i);
+      }
+      for (int j = 0; j < startSpace; ++j) {
+        System.out.print(" ");
+      }
+      int space = (count - i - 1);
+      for (int j = 0; j < count - i; ++j) {
+        System.out.print("*");
+        for (int k = 0; k < space; ++k) {
+          System.out.print(" ");
+        }
+      }
+      System.out.println();
+    }
+  }
+
+  public static void sovle11(int count) {
     int line = count;
 
     for (int i = 0; i < line; ++i) {
-      for (int j = 0; j < line - i; j++) {
-      }
+
     }
+
   }
 }
-
