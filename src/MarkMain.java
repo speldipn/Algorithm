@@ -33,7 +33,7 @@ public class MarkMain {
     solve10(7);
     System.out.println();
 
-    sovle11(5);
+    sovle11(7);
   }
 
   //  *
@@ -391,12 +391,38 @@ public class MarkMain {
     }
   }
 
+  //                      *       *
+  //                *                   *
+  //           *                             *
+  //       *                                     *
+  //    *                                           *
+  //  *                                               *
+  // *                                                 *
   public static void sovle11(int count) {
     int line = count;
 
-    for (int i = 0; i < line; ++i) {
-
+    int startSpace = 0;
+    for(int i = 0; i < count; ++i) {
+      startSpace += count-i;
     }
 
+    int space = 0;
+    for (int i = 0; i < line; ++i) {
+      startSpace -= count - i;
+      for(int j = 0; j < startSpace; ++j) {
+        System.out.print(" ");
+      }
+      if(i == 0) {
+        space += count - i;
+      } else {
+        space += (count - i) * 2;
+      }
+      System.out.print("*");
+      for(int j = 0; j < space; ++j) {
+        System.out.print(" ");
+      }
+      System.out.print("*");
+      System.out.println();
+    }
   }
 }
