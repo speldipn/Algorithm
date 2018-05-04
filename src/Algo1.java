@@ -1,4 +1,4 @@
-public class MarkMain {
+public class Algo1 {
   public static void main(String[] args) {
     solve(5);
     System.out.println();
