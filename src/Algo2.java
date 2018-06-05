@@ -3,18 +3,26 @@ import java.util.Arrays;
 public class Algo2 {
 
   public static void main(String[] args) {
-//    printSum1(2100000000L);
-//    printSum(100);
-//    printSum1(100);
-//    printSum2(1L, 2100000000L);
-//    printSum2(1L, 100L);
-//    printSolve1(100, 8);
+    // sum
+    printSum1(2100000000L);
+    printSum(100);
+    printSum1(100);
+    printSum2(1L, 2100000000L);
+    printSum2(1L, 100L);
+    System.out.println();
 
-    printSolve2("dirty room", "dormitory");
-    printSolve2("listen", "slient");
-    printSolve2("hello", "hellw");
-    printSolve2("joon", "oon");
+    // get count of numbers that include number
+    solve1(100, 8);
+    System.out.println();
 
+    // anagram problem
+    solve2("dirty room", "dormitory");
+    System.out.println();
+    solve2("listen", "slient");
+    System.out.println();
+    solve2("hello", "hellw");
+    System.out.println();
+    solve2("joon", "oon");
   }
 
   public static void printSum(long max) {
@@ -36,7 +44,7 @@ public class Algo2 {
     System.out.println(result);
   }
 
-  public static void printSolve1(long max, int x) {
+  public static void solve1(long max, int x) {
     int count = 0;
     for(int i = 1; i <= max; ++i) {
       String s = String.valueOf(i);
@@ -50,10 +58,10 @@ public class Algo2 {
         }
       }
     }
-    System.out.println(count);
+    System.out.println("result: " + max + " ==> " + count);
   }
 
-  public static void printSolve2(String a, String b) {
+  public static void solve2(String a, String b) {
     int result = 0;
     int result1 = 0;
 
