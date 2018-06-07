@@ -5,6 +5,9 @@ package leetcode;
  * @Since: 2018-05-03
  */
 public class LongestSubstring {
+  /*
+   * TODO :  20180607 failed to resolve problem
+   */
   public static void main(String[] args) {
     System.out.println(lengthOfLongestSubstring("abcabcbb"));
     System.out.println(lengthOfLongestSubstring("bbbbb"));
