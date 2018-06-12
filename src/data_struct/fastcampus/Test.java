@@ -1,3 +1,5 @@
+package data_struct.fastcampus;
+
 /**
  * @Author: Oh, Joon young (speldipn)
  * @Since: 2018-06-04

@@ -1,4 +1,4 @@
-import java.io.ObjectInputStream.GetField;
+package data_struct.fastcampus;
 
 public class Fibonachi {
 

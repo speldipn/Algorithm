@@ -1,3 +1,5 @@
+package data_struct.fastcampus;
+
 public class Algo1 {
   public static void main(String[] args) {
     solve(5);

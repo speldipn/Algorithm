@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package data_struct.fastcampus;
 
 public class Algo2 {
 
