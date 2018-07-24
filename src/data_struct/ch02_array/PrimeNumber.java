@@ -13,21 +13,21 @@ public class PrimeNumber {
   static class PrimeNumber1 {
     public static void prime() {
       int counter = 0;
+      int i, n;
 
-      for(int n = 2; n <= 1000; ++n) {
-        int i;
+      for(n = 2; n <= 1000; ++n) {
         for(i = 2; i < n; ++i) {
-          counter++;
+          ++counter;
           if(n % i == 0) {
             break;
           }
         }
         if(i == n) {
-          System.out.println(i);
+          System.out.println(n);
         }
       }
-      System.out.println("총 연산횟수 : " + counter);
+
+      System.out.println("총 연산횟수: " + counter);
     }
   }
-
 }

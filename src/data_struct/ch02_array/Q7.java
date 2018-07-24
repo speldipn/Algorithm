@@ -55,6 +55,6 @@ public class Q7 {
   public static void main(String[] args) {
     ConvNum convNum = new ConvNum();
     char arr[] = new char[100];
-    convNum.convert(55, 2, arr);
+    convNum.convert(10, 2, arr);
   }
 }
