@@ -7,6 +7,7 @@ package data_struct.ch03_search;
 public class Q5 {
   public static void main(String[] args) {
     solve(new int[]{1, 5, 5, 7, 7, 7, 7, 8, 8, 9, 9}, 9);
+    solve(new int[]{10, 20, 30, 40, 50, 50, 50}, 50);
   }
 
   private static void solve(int arr[], int key) {
