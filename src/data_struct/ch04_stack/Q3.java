@@ -107,5 +107,6 @@ public class Q3 {
 //    stack.dump();
 //    System.out.println("rear peek: " + stack.rearPeek());
 //    stack.dump();
+
   }
 }
