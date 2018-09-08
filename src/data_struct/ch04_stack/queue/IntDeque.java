@@ -4,7 +4,7 @@ package data_struct.ch04_stack.queue;
  * @Author: Oh, Joon young (speldipn)
  * @Since: 2018-09-02
  */
-/* TODO: 2018. 09.04 : 문제대로 구현은 하여 동작확인은 되었지만, 제대로 덱 자료구조를 구현한것은 아니므로 추후에 다시 학습하여 구현해야함.
+/* TODO: 2018. 09.04 : 문제대로 구현은 하여 동작확인은 되었지만, 제대로된 사양서를 기반으로 재구현해야될 필요 있음.
  */
 public class IntDeque {
   private int max;
