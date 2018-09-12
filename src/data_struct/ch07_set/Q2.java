@@ -1,4 +1,4 @@
-package data_struct.ch07set;
+package data_struct.ch07_set;
 
 /**
  * @Author: Oh, Joon young (speldipn)
