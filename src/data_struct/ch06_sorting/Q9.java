@@ -30,6 +30,7 @@ public class Q9 {
     int h;
     changeCnt = 0;
 
+    // h ..., 121, 40, 13, 4, 1
     for (h = 1; h < n / 9; h = h * 3 + 1)
       ;
 
