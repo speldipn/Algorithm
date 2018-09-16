@@ -9,26 +9,20 @@ public class Q10 {
     __quickSort(a, 0, n - 1);
   }
 
-  static void __quickSort(int a[], int l, int r) {
-    int left = l;
-    int right = r;
-    int p = (l + r) / 2;
+  static void __quickSort(int a[], int left, int right) {
+    int l = left;
+    int r = right;
+    int p = a[(l + r) / 2];
     int len = r + 1;
-
-    System.out.println("p=" + p);
     while (l <= r) {
-      showArray(a, len);
-      System.out.println("l=" + l + " r=" + r);
       while (a[l] < p) l++;
       while (a[r] > p) r--;
       if (l <= r) {
         swap(a, l++, r--);
       }
     }
-    showArray(a, a.length);
-    System.out.println("l=" + l + " r=" + r);
-    if (left > 0 && left < l) __quickSort(a, left, l - 1);
-//    if (r < right) __quickSort(a, r + 1, right);
+    if (left < r) __quickSort(a, left, r);
+    if (l < right) __quickSort(a, l, right);
   }
 
   static void swap(int[] a, int l, int r) {
@@ -56,7 +50,6 @@ public class Q10 {
     Q10 ob = new Q10();
     ob.showArrayLn(sample, sample.length);
     ob.quickSort(sample, sample.length);
-    System.out.println("오름차순으로 정렬했습니다");
     ob.showArrayLn(sample, sample.length);
   }
 }
