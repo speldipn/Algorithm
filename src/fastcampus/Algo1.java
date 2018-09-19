@@ -1,4 +1,4 @@
-package data_struct.fastcampus;
+package fastcampus;
 
 public class Algo1 {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package data_struct.fastcampus;
+package fastcampus;
 
 /**
  * @Author: Oh, Joon young (speldipn)

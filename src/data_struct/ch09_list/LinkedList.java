@@ -120,7 +120,6 @@ public class LinkedList<E> {
   }
 
   public void dump() {
-    System.out.println("dump!!!!!");
     Node<E> ptr = head;
     while (ptr != null) {
       System.out.println(ptr.data);
@@ -129,7 +128,10 @@ public class LinkedList<E> {
   }
 
   void purge(Comparator <? super E > c) {
-
+    Node<E> ptr = head;
+    while(ptr != null) {
+      ptr = ptr.next;
+    }
   }
 
   public E retrieve(int n) {
