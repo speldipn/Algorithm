@@ -18,7 +18,7 @@ class Solution:
 
     end = datetime.datetime.now()
     diff = end - start
-    print(f"time eplapsed: {int(diff.total_seconds() * 1000)}ms count={len(ans)}")
+    print(f"time elapsed: {int(diff.total_seconds() * 1000)}ms count={len(ans)}")
 
     start = datetime.datetime.now()
 
