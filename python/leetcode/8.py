@@ -8,12 +8,10 @@ class Solution:
         a += s[i]
       elif s[i] == '-' or s[i] == '+':
         if len(a) > 0 and (a[0] == '+' or a[0] == '-'):
-         # a = s[i] + s[i+1:i+1]
-         # a = ""
           break
         else:
-          if len(a) > 0: 
-            #a = ""
+          if len(a) > 0:
+            # a = ""
             break
           a = s[i] + a
       elif s[i] == ' ':
@@ -28,7 +26,7 @@ class Solution:
       return 0
     else:
       _s = a.strip()
-      if not _s[len(_s)-1].isnumeric():
+      if not _s[len(_s) - 1].isnumeric():
         _s += "0"
       v = int(_s)
       print("\nresult:", v)
@@ -38,6 +36,7 @@ class Solution:
         return 2147483647
       else:
         return v
+
 
 s = Solution()
 s.myAtoi("42")
