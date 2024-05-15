@@ -11,3 +11,5 @@ For coding add... or For interview
 * Look back and refactor
 
 ### What is inputs?
+
+### TIP: For solving problem use array or string
