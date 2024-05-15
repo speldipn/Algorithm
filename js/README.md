@@ -11,6 +11,3 @@ For coding add... or For interview
 * Look back and refactor
 
 ### What is inputs?
-
-
-
