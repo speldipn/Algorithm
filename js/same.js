@@ -5,7 +5,7 @@ function print(a, b) {
 
 // my algorithm
 function same(a, b) {
-  print(a, b)
+  print(a, b);
 
   for (let i = 0; i < a.length; ++i) {
     const idx = b.indexOf(a[i] ** 2);
@@ -51,16 +51,19 @@ function same3(a, b) {
     frequncyCount2[val] = (frequncyCount2[val] || 0) + 1;
   }
   for (let key in frequncyCount1) {
-    if (!(key ** 2 in frequncyCount2)) { // not existed 
+    if (!(key ** 2 in frequncyCount2)) {
+      // not existed
       return false;
     }
-    if (frequncyCount2[key ** 2] != frequncyCount1[key]) { // not match count
+    if (frequncyCount2[key ** 2] != frequncyCount1[key]) {
+      // not match count
       return false;
     }
   }
   return true;
 }
 
+console.log("same()");
 const s1 = new Date();
 console.log(same([1, 2, 3, 1], [4, 1, 9, 1]));
 console.log(same([1, 2, 3], [1, 9]));
@@ -68,17 +71,20 @@ console.log(same([1, 2, 1], [4, 4, 1]));
 const e1 = new Date();
 const diff1 = (e1.getTime() - s1.getTime()) / 1000;
 
-console.log("================================")
+console.log("================================");
 
+console.log("same2()");
 const s2 = new Date();
+console.log("same()");
 console.log(same2([1, 2, 3, 1], [4, 1, 9, 1]));
 console.log(same2([1, 2, 3], [1, 9]));
 console.log(same2([1, 2, 1], [4, 4, 1]));
 const e2 = new Date();
 const diff2 = (e2.getTime() - s2.getTime()) / 1000;
 
-console.log("================================")
+console.log("================================");
 
+console.log("same3()");
 const s3 = new Date();
 console.log(same3([1, 2, 3, 1], [4, 1, 9, 1]));
 console.log(same3([1, 2, 3], [1, 9]));

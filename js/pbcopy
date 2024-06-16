@@ -1,0 +1,8 @@
+  if(a.length !== b.length) {
+    console.log(a, b, false);
+  }
+  let s1 = 0;
+  for (let i in a) { s1 += a[i].charCodeAt(0); }
+  let s2 = 0;
+  for (let i in b) { s2 += b[i].charCodeAt(0); }
+  console.log(a, b, s1 === s2);
