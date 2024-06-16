@@ -46,11 +46,27 @@ function maxSubarraySum1(arr, num) {
   return max;
 }
 
+function slidingWindow(arr, num) {
+  if (num > arr.length) {
+    return null;
+  }
+  let sum = 0;
+  for (let i = 0; i < num; ++i) {
+    sum += arr[i];
+  }
+  let max = sum;
+  for (let i = num; i < arr.length; ++i) {
+    sum = sum - arr[i - num] + arr[i];
+    max = Math.max(max, sum);
+  }
+  return max;
+}
+
 function assert(v, result) {
   if (v != result) {
-    console.error("not equal", v, result);
+    console.error("[ Failed! ]", v, result);
   } else {
-    console.log("[pass]", v, result);
+    console.log("[ Pass ]", v, result);
   }
 }
 
@@ -70,3 +86,12 @@ assert(maxSubarraySum1([4, 2, 1, 6], 1), 6);
 assert(maxSubarraySum1([4, 2, 1, 6, 2], 4), 13);
 assert(maxSubarraySum1([], 4), null);
 assert(maxSubarraySum1([2, 6, 9, 2, 1, 8, 5, 6, 3], 3), 19);
+
+console.log("======================================");
+console.log("[Yours - Sliding Winow]");
+assert(slidingWindow([1, 2, 5, 2, 8, 1, 5], 2), 10);
+assert(slidingWindow([1, 2, 5, 2, 8, 1, 5], 4), 17);
+assert(slidingWindow([4, 2, 1, 6], 1), 6);
+assert(slidingWindow([4, 2, 1, 6, 2], 4), 13);
+assert(slidingWindow([], 4), null);
+assert(slidingWindow([2, 6, 9, 2, 1, 8, 5, 6, 3], 3), 19);
