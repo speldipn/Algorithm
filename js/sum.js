@@ -63,7 +63,7 @@ function slidingWindow(arr, num) {
 }
 
 function assert(v, result) {
-  if (v != result) {
+  if (v !== result) {
     console.error("[ Failed! ]", v, result);
   } else {
     console.log("[ Pass ]", v, result);
