@@ -1,4 +1,4 @@
-// "hellothere";
+// "hello there";
 // console.log(maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 2)); // 10
 // console.log(maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 4)); // 17
 // console.log(maxSubarraySum([4, 2, 1, 6], 1)); // 6
@@ -13,7 +13,7 @@ function maxSubarraySum(arr, n) {
   for (let i = 0; i < arr.length; ++i) {
     let values = [];
     if (i + n > arr.length) {
-      valeus = [];
+      values = [];
       // const a = arr.slice(i, i + n);
       // const b = arr.slice(0, (i + n) % arr.length);
       // values = [...a, ...b];
@@ -71,8 +71,8 @@ function assert(v, result) {
 }
 
 console.log("[Mine]");
-assert(maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 2), 10);
 assert(maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 4), 17);
+assert(maxSubarraySum([1, 2, 5, 2, 8, 1, 5], 2), 10);
 assert(maxSubarraySum([4, 2, 1, 6], 1), 6);
 assert(maxSubarraySum([4, 2, 1, 6, 2], 4), 13);
 assert(maxSubarraySum([], 4), null);
