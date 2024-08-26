@@ -28,6 +28,37 @@ function factorial(num) {
 }
 
 for(let i = 0; i <= 5; ++i) {
-  process.stdout.write(`${i}!: `);
-  console.log(factorial(i));
+  console.log("%d!: %d", i, factorial(i));
 }
+
+function collectOddValues(arr) {
+  let result = [];
+
+  function helper(helperInput) {
+    if(helperInput.length === 0) {
+      return;
+    }
+    if(helperInput[0] % 2 !== 0) {
+      result.push(helperInput[0]);
+    }
+    helper(helperInput.slice(1));
+  }
+
+  helper(arr);
+
+  return result;
+}
+
+let result = collectOddValues([1,2,3,4,5,6,7,8,9,10]);
+console.log(result);
+
+let r1 = [1,2,3,4,5];
+console.log(r1.slice(1));
+r1 = r1.slice(1);
+console.log(r1);
+r1 = r1.slice(1);
+console.log(r1);
+r1 = r1.slice(1);
+console.log(r1);
+
+console.log("End");
