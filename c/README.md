@@ -2,20 +2,20 @@
 
 Time Complexity > Space Complexity
 
-## Linear
-
-For saving data
+## Linear(For saving data)
 
 - List
 - Stack
 - Queue
 
-## NonLinear
+## NonLinear(For presentation)
 
 - Tree
 - Graph
 
 ### Tree
+
+Hierarchical Relationship
 
 - Root
 - Internal node
@@ -24,4 +24,3 @@ For saving data
 - Level & Height
 
 Binary Tree & Sub Tree
-

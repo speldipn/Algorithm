@@ -21,6 +21,10 @@ public class KMPmatch {
         pp = skip[pp];
       }
     }
+    
+    // log
+    for(int i = 1; i < skip.length; ++i)System.out.print(skip[i]);
+    System.out.println();
 
     // search
     pt = pp = 0;
