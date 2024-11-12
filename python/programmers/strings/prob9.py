@@ -17,7 +17,7 @@ def solution(babbling):
         i = 0
         while i < len(target):
           if i + 1 < len(target) and target[i] == target[i+1]:
-             break
+            break
           i += 1
         if i == len(target):
           answer += 1
